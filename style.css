@@ -1,0 +1,46 @@
+h1{
+    color:mediumseagreen;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.header{
+    background-color: lightsteelblue;
+    display:flex;
+    justify-content: space-between;
+}
+.menu{
+    margin-right: 30px;
+}
+.menu a{
+    margin-left: 20px;
+    color:darkred;
+    font-size: 15px;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.item{
+    position: relative;
+}
+.item img{
+    width:300px;
+    height:300px;
+}
+.item p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color:darkblue;
+    font-size: 30px;
+    font-weight: bold;
+}
+.item:hover p{
+    opacity:1;
+}
+.item:hover img{
+    opacity:0.33;
+}
